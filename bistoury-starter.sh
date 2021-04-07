@@ -5,6 +5,7 @@ proxyServerUrl=$1
 
 do_install() {
 	echo "# Executing bistoury install script, args: ${@}"
+	echo pwd
 	mkdir -p /opt/bistoury
 	cd /opt/bistoury
 	curl -O https://arthas.aliyun.com/bistoury-agent-bin.tar.gz
